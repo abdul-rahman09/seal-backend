@@ -24,7 +24,7 @@ class DocumentView(APIView):
                 serializer = DocumentSerializer(data=obj)
                 if serializer.is_valid():
                     serializer.save()
-            return Response({'msg': 'Resume Uploaded Successfully', 'status':'success'}, status=status.HTTP_201_CREATED)
+            return Response({'msg': ' Uploaded Successfully', 'status':'success'}, status=status.HTTP_201_CREATED)
         except:
             return Response("Error",status=400)
 
